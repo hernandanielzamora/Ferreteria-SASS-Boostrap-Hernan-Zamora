@@ -1,0 +1,319 @@
+/* Normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+    background: rgb(145,133,133);
+    background: linear-gradient(90deg, rgba(145,133,133,1) 100%, rgba(67,85,94,1) 100%);
+}
+
+/* Header y Navbar */
+
+
+.head {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+    margin-bottom: 2%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.head__image {
+    align-self: center;
+    margin: 2%;
+    margin-left: 20%;
+    width: 20vw;
+    height: 20vh;
+    margin-top: 10px;
+}
+
+.head__item {
+    text-decoration: none;
+    padding: 10px;
+    align-self: center;
+}
+
+.head__link {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    margin: auto;   
+    width: fit-content;
+}
+
+.active {
+    text-shadow: 1px 1px 20px #00ffc0;
+    color: #00ffc0;
+    font-style: oblique;
+}
+
+.head__link:hover {
+    font-size: xx-large;
+}
+
+
+
+/* Section Productos (Index) */
+
+.sectionp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+
+.sectionp__productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin-bottom: 5%;
+}
+
+.sectionp__title {
+    display: flex;
+    margin: 3%;
+    margin-top: 10%;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.sectionp__image {
+    padding: 0;
+    width: 20vw;
+    height: 30vh;
+}
+
+
+
+/* Section Marcas */
+
+.sectionm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.sectionm__marcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+
+
+.sectionm__image {
+    padding: 0;
+    width: 25vw;
+    height: 25vh;
+    margin: 8%;
+}
+
+
+/* Section Sobre Nosotros */
+
+.sectionnosotros{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 70% 30%;
+}
+
+.sectionnosotros__texto {
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    text-align: justify;
+}
+
+.sectionnosotros__title {
+    display: flex;
+    font-size: 50px;
+    margin: 2%;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.sectionnosotros__paragraph {
+    font-size: 20px;
+    margin: 0 2% 0 0;
+}
+
+.sectionnosotros__div{
+    align-self: center;
+}
+
+/* Footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.footer__div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.footer__whatsapp {
+    position: fixed;
+    width: 90px;
+    bottom: 10px;
+    left: 10px;
+}
+
+
+.footer__item {
+    margin: 3%;
+    list-style-type: none;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.footer__link:hover {
+    font-size: x-large;
+    color: #00ffc0;
+}
+
+.footer__logo {
+    height: 20%;
+    width: 20%;
+}
+
+
+/* Section Ubicación (ubicacion.html) */
+
+.body__ubicacion{
+    background-color: lightgrey;
+}
+
+.section__ubicacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+}
+
+.ubicacion__title{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 2%;
+}
+
+.ubicacion__div{
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ubicacion__link {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    align-self: center;
+    margin-bottom: 2%;
+}
+
+.ubicacion__link:hover{
+    color: blue;
+    font-size: xx-large;
+}
+
+.ubicacion__mapa{
+    align-self: center;
+    margin-bottom: 2%;
+}
+
+/* productos.html */
+
+
+.producto__image {
+    width: 15vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card {
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3 10vw);
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 15%;
+}
+
+.card__product {
+    display: flex;
+    margin-left: 1%;
+    border: 1px black solid;
+}
+
+.card__txt{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 1%;
+    font-size: 15px;
+}
+
+.card__title {
+    font-size: 30px;
+    margin-left: 2%;
+}
+
+.card__price {
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.card__priceoffer {
+    margin: 5%;
+    font-size: 20px;
+}
+
+
+
+
