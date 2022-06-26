@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="multimedia/image/ico.ico">
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link Css -->
     <link rel="stylesheet" href="style.css">
     <!-- Link Google Fonts -->
@@ -32,7 +34,7 @@
 
     <!-- Inicio Section Productos -->
     <h1 class="sectionp__title"><b>Productos en Oferta</b></h1>
-    <section class="sectionp">
+    <section class="sectionp" data-aos="fade-up">
             <div class="sectionp__productos">
                 <a href="pages/productos.html#amoladoraoferta" class="sectionp__link"><img src="multimedia/image/amoladora.png" alt="amoladora" class="sectionp__image"></a>
                 <b><p>Amoladora Angular TC-AG 115/750</p>
@@ -55,8 +57,8 @@
     <!-- Fin Section Productos -->
     
     <!-- Inicio Section Marcas -->
-    <h2 class="sectionp__title"><b>Marcas que forman parte de Ferretería X </b></h2>
-    <section class="sectionm">
+    <h2 class="sectionp__title" data-aos="fade-up"><b>Marcas que forman parte de Ferretería X </b></h2>
+    <section class="sectionm" data-aos="fade-up">
             <div class="sectionm__marcas">
                 <a href="https://aerolom.com.ar/" target="_blank"><img src="multimedia/image/aerolomlogo.png" alt="Logo Aerolom" class="sectionm__image" ></a>
             </div>
@@ -72,8 +74,8 @@
     <!-- Fin Section Marcas -->
 
     <!-- Inicio Section Sobre Nosotros -->
-    <h2 class="sectionnosotros__title" id="sobrenosotros">Sobre Nosotros</h2>
-    <section class="sectionnosotros">
+    <h2 class="sectionnosotros__title" id="sobrenosotros" data-aos="zoom-in">Sobre Nosotros</h2>
+    <section class="sectionnosotros" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
         <div class="sectionnosotros__texto">
             <p class="sectionnosotros__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis magni repellat incidunt assumenda officia vel recusandae, quae adipisci iusto minus possimus quibusdam quod quasi eos consequatur, ipsa sed accusamus omnis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quod tenetur repellat tempore culpa quia exercitationem, accusantium aliquid sunt officia, totam natus corporis illo omnis dignissimos consequuntur assumenda ut voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus veniam iure accusamus eligendi? Eum in error amet nobis? Atque consectetur molestiae distinctio placeat ea ex modi architecto beatae suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A rem, expedita natus maxime culpa dolor quidem necessitatibus deserunt! Asperiores repellendus animi doloremque officia molestias laboriosam labore error adipisci aliquam ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi ratione voluptas fuga eos suscipit harum animi impedit id asperiores consequuntur rem, iusto architecto consequatur ab fugit consectetur dolorum illo!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ratione omnis pariatur eius enim neque fugit dolor nihil reiciendis consequatur accusamus nesciunt nulla facilis necessitatibus facere, praesentium, reprehenderit, voluptatem eos.
             Labore, quis dolor! Dolorem consectetur quisquam qui, natus quaerat in, nesciunt atque placeat iste quis laborum! Minima quibusdam, exercitationem at voluptates magni ullam quisquam maxime earum fugiat quam impedit accusamus?
@@ -109,5 +111,11 @@
     </footer>
     <!-- Fin Footer -->
 
+    <!-- Inicio AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Fin AOS -->
 </body>
 </html>
