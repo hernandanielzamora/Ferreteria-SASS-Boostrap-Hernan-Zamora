@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../multimedia/image/ico.ico">
 
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="../style.css">
 
@@ -32,13 +35,13 @@
     <!-- Fin Header -->
 
     <!-- Inicio Section Productos -->
-    <h1 class="ubicacion__title">Productos</h1>
+    <h1 class="ubicacion__title"data-aos="fade-up" data-aos-anchor-placement="center-bottom">Productos</h1>
     <!-- Fin del menú -->
 
     <!-- Colección de Productos -->
     <main>
 
-        <section class="card">
+        <section class="card" data-aos="fade-up" data-aos-duration="3000">
 
                 <div class="card__product">
                     <img src="../multimedia/image/carretilla.png" id="carretillaoferta" alt="Carretilla Oferta" class="producto__image">
@@ -143,5 +146,11 @@
     </footer>
     <!-- Fin Footer -->
 
+    <!-- Inicio AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Fin AOS -->
 </body>
 </html>
