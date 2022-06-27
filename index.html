@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="multimedia/image/ico.ico">
+    <!-- Link Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Link FontAwesome -->
+    <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>        
+    <!-- Link Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link Css -->
@@ -18,40 +25,90 @@
 <body>
     
     <!-- Inicio Header -->
-    <header class="head">
-        <a href="index.html" ><img src="multimedia/image/logo.png" alt="Logo Ferretería" class="head__image"></a>
-        <nav>
-            <ul class="head__menu">
-                <il class="head__item"><a href="index.html" class="head__link active">Inicio</a></il>
-                <il class="head__item"><a href="#sobrenosotros" class="head__link" >Sobre Nosotros</a></il>
-                <il class="head__item"><a href="pages/productos.html" class="head__link" >Productos</a></il>
-                <il class="head__item"><a href="#contacto" class="head__link" >Contactános</a></il>
-                <il class="head__item"><a href="pages/ubicacion.html" class="head__link" >Donde Encontrarnos</a></il>
-            </ul>
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <img src="multimedia/image/logo2.png" alt="" width="100" height="80">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse div-navbar d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link activeheader" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#sobrenosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ubicacion.html">Ubicación</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Fin NavBar -->
         </nav>
     </header>
     <!-- Fin Header -->
 
     <!-- Inicio Section Productos -->
-    <h1 class="sectionp__title"><b>Productos en Oferta</b></h1>
-    <section class="sectionp" data-aos="fade-up">
-            <div class="sectionp__productos">
-                <a href="pages/productos.html#amoladoraoferta" class="sectionp__link"><img src="multimedia/image/amoladora.png" alt="amoladora" class="sectionp__image"></a>
-                <b><p>Amoladora Angular TC-AG 115/750</p>
-                <p>Precio: <strike>$*****</strike> // Precio Oferta: $*******</p></b>
+    <h1 class="sectionp__title animate_animated animate__heartBeat"><b>Productos en Oferta</b></h1> 
+    <section class="d-flex justify-content-center">
+        <!-- Carrousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide w-50 d-flex justify-content-center" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-
-            <div class="sectionp__productos">
-                <a href="pages/productos.html#carretillaoferta" class="sectionp__link"><img src="multimedia/image/carretilla.png" alt="carretilla" class="sectionp__image"></a>
-                <b><p>Carretilla Rueda De Goma 75 L.</p>
-                <p>Precio: <strike>$*****</strike> // Precio Oferta: $*******</p></b>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="pages/productos.html#amoladoraoferta">
+                <img src="multimedia/image/amoladora.png" class="d-block w-100 h-100" alt="Amoladora">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="product-text">Amoladora Angular TC-AG 115/750</h5>
+                    <p class="product-text">Precio: <strike>$*****</strike> </p><p class="product-text"> Precio Oferta: $*******</p>
+                </div>
+                </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="pages/productos.html#carretillaoferta">
+                    <img src="multimedia/image/carretilla.png   " class="d-block w-100 h-100" alt="Carretilla">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="product-text">Carretilla Rueda De Goma 75 L.</h5>
+                        <p class="product-text">Precio: <strike>$*****</strike> </p><p class="product-text"> Precio Oferta: $*******</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="pages/productos.html#cinceladoraoferta">
+                    <img src="multimedia/image/martilloneumatico.png" class="d-block w-100 h-100" alt="Martillo Neumático">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="product-text">Martillo Cincelador Neumatico 1/4 4500gpm</h5>
+                        <p class="product-text">Precio: <strike>$*****</strike> </p><p class="product-text"> Precio Oferta: $*******</p>
+                    </div>
+                    </a>
+                </div>
             </div>
-
-            <div class="sectionp__productos">
-                <a href="pages/productos.html#cinceladoraoferta"><img src="multimedia/image/martilloneumatico.png" alt="Martillo Cincelador Neumático" class="sectionp__image"></a>
-                <b><p>Martillo Cincelador Neumatico 1/4 4500gpm</p>
-                <p>Precio: <strike>$*****</strike> // Precio Oferta: $*******</p></b>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Fin Carrousel -->
+        </div>
 
     </section>
     <!-- Fin Section Productos -->
@@ -59,7 +116,7 @@
     <!-- Inicio Section Marcas -->
     <h2 class="sectionp__title" data-aos="fade-up"><b>Marcas que forman parte de Ferretería X </b></h2>
     <section class="sectionm" data-aos="fade-up">
-            <div class="sectionm__marcas">
+             <div class="sectionm__marcas">
                 <a href="https://aerolom.com.ar/" target="_blank"><img src="multimedia/image/aerolomlogo.png" alt="Logo Aerolom" class="sectionm__image" ></a>
             </div>
 
@@ -69,7 +126,7 @@
 
             <div class="sectionm__marcas">
                 <a href="https://zelta.com.ar/" target="_blank"><img src="multimedia/image/zeltalogo.png" alt="Logo Zelta" class="sectionm__image"></a>
-            </div>
+            </div> 
     </section>
     <!-- Fin Section Marcas -->
 
@@ -84,7 +141,7 @@
             Obcaecati esse ratione ullam voluptatem, rerum vel ex? Dolor facere molestiae similique! Vitae ad quod adipisci dolor error quo quibusdam animi. Enim quos nihil tempore velit vero! Eos, minus beatae!</p>    
         </div>
         <div class="sectionnosotros__div">
-            <img src="multimedia/image/logo2.png" alt="Ferretería X">
+            <img src="multimedia/image/logo.png" class="img-fluid" alt="Ferretería X">
 
         </div>
     </section>
@@ -92,23 +149,74 @@
 
     <!-- Inicio Footer -->
     <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="multimedia/image/whatsapp.PNG" alt="Logo WhatsApp" class="footer__whatsapp"></a>
-    <footer id="contacto" class="footer">
-        <div class="footer__div">
-                <ul class="footer__menu">
-                    <il class="footer__item"><a href="#" class="footer__link">Inicio</a></il>
-                    <il class="footer__item"><b>Celular: ***********</b></il>
-                    <il class="footer__item"><b>Telefono Fijo: ************</b></il>
-                    <il class="footer__item"><b>Mail de Contacto: *********@*****</b></il>
-                </ul>
-        </div>
-       
-        <div class="footer__div">
-            <a href="https://www.instagram.com/"><img src="multimedia/image/instagram.png" alt="Instagram Logo" class="footer__logo"></a></il>
-            <a href="https://twitter.com/home"><img src="multimedia/image/twitter.png" alt="Twitter Logo" class="footer__logo"></a></il>
 
+    <footer style="background-color: #deded5;" id="contacto">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Ferretería X</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
         </div>
-        
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#" style="color: #4f4f4f;">Inicio</a>
+            </li>
+            <li class="mb-1">
+              <a href="pages/ubicacion.html" style="color: #4f4f4f;">Ubicación</a>
+            </li>
+            <li class="mb-1">
+              <a href="pages/productos.html" style="color: #4f4f4f;">Productos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Horarios</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td>Lun - Viernes</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sábados</td>
+                <td>8am - 1pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center py-5">
+        <a href="https://twitter.com/home?lang=es" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fa fa-facebook"></i>
+            </button>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fa-brands fa-google"></i>
+            </button>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                <i class="fab fa-instagram"></i>
+            </button>
+        </a>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="#">Ferretería X</a>
+    </div>
+    
     </footer>
+
     <!-- Fin Footer -->
 
     <!-- Inicio AOS -->
@@ -117,5 +225,39 @@
       AOS.init();
     </script>
     <!-- Fin AOS -->
+
+    <!-- Inicio Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Fin Boostrap -->
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

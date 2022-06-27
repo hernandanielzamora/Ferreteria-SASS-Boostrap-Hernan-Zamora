@@ -5,32 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../multimedia/image/ico.ico">
-
+    <!-- Link Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Link FontAwesome -->
+    <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
+    <!-- Link Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Link AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../style.css">
-
     <!-- Link Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../style.css">
 
     <title>Ferretería X Productos</title>
 </head>
 
 <body>
     <!-- Inicio Header -->
-    <header class="head">
-        <a href="../index.html"><img src="../multimedia/image/logo.png" alt="Logo Ferretería" class="head__image"></a>
-        <nav>
-            <ul>
-                <il class="head__item"><a href="../index.html" class="head__link" >Inicio</a></il>
-                <il class="head__item"><a href="../index.html#sobrenosotros" class="head__link">Sobre Nosotros</a></il>
-                <il class="head__item"><a href="productos.html" class="head__link active">Productos</a></il>
-                <il class="head__item"><a href="#contacto" class="head__link">Contactános</a></il>
-                <il class="head__item"><a href="ubicacion.html" class="head__link" >Donde Encontrarnos</a></il>
-            </ul>
-        </nav>
+    <header>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/image/logo2.png" alt="" width="100" height="80">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse div-navbar d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link activeheader" href="../index.html#sobrenosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Fin NavBar -->
     </header>
     <!-- Fin Header -->
 
@@ -40,86 +65,99 @@
 
     <!-- Colección de Productos -->
     <main>
-
-        <section class="card" data-aos="fade-up" data-aos-duration="3000">
-
-                <div class="card__product">
-                    <img src="../multimedia/image/carretilla.png" id="carretillaoferta" alt="Carretilla Oferta" class="producto__image">
-                    <article class="card__txt">
-                        <b> <p class="card__title">Carretilla Rueda De Goma 75 L.</p> </b>
-                        <p class="card__price">Precio: <strike>$*****</strike></p><p class="card__priceoffer">Precio Oferta: $*******</p>
-                    </article>
+        <section class="section-producto" data-aos="fade-up" data-aos-duration="3000">
+            <!-- Inicio Catálogo -->
+            <div class="container-fluid w-100">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/carretilla.png" id="carretillaoferta" class="card-img-top" alt="Carretilla Rueda De Goma 75 L.">
+                            <div class="card-body">
+                              <h5 class="card-title">Carretilla Rueda De Goma 75 L.</h5>
+                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/amoladora.png" class="card-img-top" id="amoladoraoferta" alt="Amoladora Angular TC-AG 115/750">
+                            <div class="card-body">
+                              <h5 class="card-title">Amoladora Angular TC-AG 115/750</h5>
+                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/martilloneumatico.png" class="card-img-top" id="cinceladoraoferta" alt="Martillo Cincelador Neumatico 1/4 4500gpm">
+                            <div class="card-body">
+                              <h5 class="card-title">Martillo Cincelador Neumatico 1/4 4500gpm</h5>
+                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card__product">
-                    <img src="../multimedia/image/amoladora.png" id="amoladoraoferta" alt="Amoladora Oferta" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Amoladora Angular TC-AG 115/750</p></b>
-                        <p class="card__price">Precio: <strike>$*****</strike></p> <p class="card__priceoffer">Precio Oferta: $*******</p>
-                    </article>
+                <div class="row">
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/cañopvc.png" class="card-img-top" alt="Caño pvc">
+                            <div class="card-body">
+                              <h5 class="card-title">Caño Termofusion Agua 20 Mm Agua Caliente</h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/cintametrica.png" class="card-img-top" alt="Cinta Metrica Profesional 5 Mts Crossmaster">
+                            <div class="card-body">
+                              <h5 class="card-title">Cinta Metrica Profesional 5 Mts Crossmaster</h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/cableunipolar.png" class="card-img-top" alt="Cable Unipolar 1.5 Mm 100 Mts ">
+                            <div class="card-body">
+                              <h5 class="card-title">Cable Unipolar 1.5 Mm 100 Mts </h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="card__product">
-                    <img src="../multimedia/image/martilloneumatico.png" id="cinceladoraoferta" alt="Martillo Neumático" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Martillo Cincelador Neumatico 1/4 4500gpm</p></b>
-                        <p class="card__price">Precio: <strike>$*****</strike></p><p class="card__priceoffer">Precio Oferta: $*******</p>
-                    </article>     
+                <div class="row">
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/latexinterior.png" class="card-img-top" alt="Pintura látex de interior blanco mate lavable 20 L">
+                            <div class="card-body">
+                              <h5 class="card-title">Pintura látex de interior blanco mate lavable 20 L</h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/clavos.png" class="card-img-top" alt="5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total">
+                            <div class="card-body">
+                              <h5 class="card-title">5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total</h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                            <div class="card" style="width: 18rem;">
+                            <img src="../multimedia/image/destornillador.png" class="card-img-top" alt="Atornillador De Impacto 2 Bateria 20v Brusheless Industrial">
+                            <div class="card-body">
+                              <h5 class="card-title">Atornillador De Impacto 2 Bateria 20v Brusheless Industrial</h5>
+                              <p class="card-text"> Precio: $*******</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-
-                <div class="card__product">
-                    <img src="../multimedia/image/cañopvc.png" alt="Caño pvc" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Caño Termofusion Agua 20 Mm Agua Caliente</p></b>
-                        <p class="card__price">Precio: $*****</p>
-                    </article>
-                </div>
-
-                <div class="card__product">
-                    <img src="../multimedia/image/cintametrica.png" alt="Cinta métrica" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Cinta Metrica Profesional 5 Mts Crossmaster</p></b>
-                        <p class="card__price">Precio: $*****</p>
-                    </article>
-
-                </div >
-
-                <div class="card__product">
-                    <img src="../multimedia/image/cableunipolar.png" alt="Cable Unipolar" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Cable Unipolar 1.5 Mm 100 Mts </p></b>
-                        <p class="card__price">Precio: $*****</p>
-                     </article>
-
-                </div>
-
-                <div class="card__product">
-                    <img src="../multimedia/image/latexinterior.png" alt="Latex Interior" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Pintura látex de interior blanco mate lavable 20 L</p></b>
-                        <p class="card__price">Precio: $*****</p>
-                    </article>
-                </div>
-
-                <div class="card__product"> 
-                    <img src="../multimedia/image/clavos.png" alt="5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total</p></b>
-                        <p class="card__price">Precio: $*****</p>
-                    </article>
-                </div>
-
-                <div class="card__product">
-                    <img src="../multimedia/image/destornillador.png" alt="Atornillador De Impacto 2 Bateria 20v Brusheless Industrial" class="producto__image">
-                    <article class="card__txt">
-                        <b><p class="card__title">Atornillador De Impacto 2 Bateria 20v Brusheless Industrial</p></b>
-                        <p class="card__price">Precio: $*****</p>
-                    </article>
-                </div>
-
+            </div>
+            <!-- Fin Catálogo -->
         </section>
-
     </main>
         <!-- Fin Colección de Productos-->
 
@@ -127,20 +165,69 @@
 
     <!-- Inicio Footer -->
     <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../multimedia/image/whatsapp.PNG" alt="Logo WhatsApp" class="footer__whatsapp"></a>
-    <footer id="contacto" class="footer">
-        <div class="footer__div">
-                <ul class="footer__menu">
-                    <il class="footer__item"><a href="../index.html" class="footer__link">Inicio</a></il>
-                    <il class="footer__item"><b>Celular: ***********</b></il>
-                    <il class="footer__item"><b>Telefono Fijo: ************</b></il>
-                    <il class="footer__item"><b>Mail de Contacto: *********@*****</b></il>
-                </ul>
+    <footer style="background-color: #deded5;" id="contacto">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Ferretería X</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+                voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-3" style="letter-spacing: 2px; color: #818963;">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-1">
+                  <a href="../index.html" style="color: #4f4f4f;">Inicio</a>
+                </li>
+                <li class="mb-1">
+                  <a href="ubicacion.html" style="color: #4f4f4f;">Ubicación</a>
+                </li>
+                <li class="mb-1">
+                  <a href="productos.html" style="color: #4f4f4f;">Productos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h5 class="mb-1" style="letter-spacing: 2px; color: #818963;">Horarios</h5>
+              <table class="table" style="color: #4f4f4f; border-color: #666;">
+                <tbody>
+                  <tr>
+                    <td>Lun - Viernes</td>
+                    <td>8am - 9pm</td>
+                  </tr>
+                  <tr>
+                    <td>Sábados</td>
+                    <td>8am - 1pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-       
-        <div class="footer__div">
-            <a href="https://www.instagram.com/"><img src="../multimedia/image/instagram.png" alt="Instagram Logo" class="footer__logo"></a></il>
-            <a href="https://twitter.com/home"><img src="../multimedia/image/twitter.png" alt="Twitter Logo" class="footer__logo"></a></il>
-
+        <div class="container d-flex justify-content-center py-5">
+            <a href="https://twitter.com/home?lang=es" target="_blank">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fa fa-facebook"></i>
+                </button>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fa-brands fa-twitter"></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                    <i class="fab fa-instagram"></i>
+                </button>
+            </a>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-dark" href="#">Ferretería X</a>
         </div>
         
     </footer>
@@ -152,5 +239,12 @@
       AOS.init();
     </script>
     <!-- Fin AOS -->
+
+    <!-- Inicio Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Fin Boostrap -->
 </body>
 </html>
+
+
+

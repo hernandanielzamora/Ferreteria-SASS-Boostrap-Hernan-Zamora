@@ -1,9 +1,7 @@
 /* Normalize */
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
@@ -11,29 +9,28 @@
 
 
 body{
-    background: rgb(145,133,133);
-    background: linear-gradient(90deg, rgba(145,133,133,1) 100%, rgba(67,85,94,1) 100%);
+    background-color: #dcded5;
 }
 
 /* Header y Navbar */
 
 
-.head {
+/* .head {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
     margin-bottom: 2%;
-}
+} */
 
-nav{
+/* nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
     width: 100%;
-}
+} */
 
-.head__image {
+/* .head__image {
     align-self: center;
     margin: 2%;
     margin-left: 20%;
@@ -54,38 +51,30 @@ nav{
     font-size: x-large;
     margin: auto;   
     width: fit-content;
+} */
+
+
+.nav-link {
+    color: black;
+    font-size: large;
+}
+.nav-link:hover {
+    color: #003d73;
 }
 
-.active {
-    text-shadow: 1px 1px 20px #00ffc0;
-    color: #00ffc0;
+.activeheader {
+    text-shadow: 1px 1px 20px #003d73;
+    color: #003d73;
     font-style: oblique;
 }
 
 .head__link:hover {
-    font-size: xx-large;
+    font-size: xx-large !important;
 }
 
 
 
 /* Section Productos (Index) */
-
-.sectionp {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-}
-
-
-.sectionp__productos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
-    margin-bottom: 5%;
-}
 
 .sectionp__title {
     display: flex;
@@ -95,13 +84,11 @@ nav{
     justify-content: center;
 }
 
-.sectionp__image {
-    padding: 0;
-    width: 20vw;
-    height: 30vh;
+.product-text {
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
 }
-
-
 
 /* Section Marcas */
 
@@ -249,15 +236,11 @@ nav{
 .ubicacion__link {
     text-decoration: none;
     font-size: x-large;
-    color: black;
+    color: 003d73;
     align-self: center;
     margin-bottom: 2%;
 }
 
-.ubicacion__link:hover{
-    color: blue;
-    font-size: xx-large;
-}
 
 .ubicacion__mapa{
     align-self: center;
@@ -266,23 +249,24 @@ nav{
 
 /* productos.html */
 
-
-.producto__image {
-    width: 15vw;
-    height: 100%;
-    object-fit: cover;
+.section-producto {
+    margin-bottom: 5%;
+    margin-left: 10%;
 }
 
 .card {
-    color: white;
-    display: grid;
-    grid-template-rows: repeat(3 10vw);
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
-.card__product {
+
+/* .producto__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ */
+
+/* .card__product {
     display: flex;
     margin-left: 1%;
     border: 1px black solid;
@@ -312,7 +296,7 @@ nav{
 .card__priceoffer {
     margin: 5%;
     font-size: 20px;
-}
+} */
 
 
 
