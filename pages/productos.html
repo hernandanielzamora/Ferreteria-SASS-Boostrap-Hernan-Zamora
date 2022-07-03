@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../multimedia/image/ico.ico">
     <!-- Link Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Link FontAwesome -->
-    <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
     <!-- Link Animate Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Link AOS -->
@@ -27,15 +24,15 @@
     <header>
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg ">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../multimedia/image/logo2.png" alt="" width="100" height="80">
+                    <img src="../multimedia/image/logo2.png" aalt="Logo Ferretería X" width="100" height="80">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
               </button>
-              <div class="collapse navbar-collapse div-navbar d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="nav justify-content-end">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav">
                     <li class="nav-item">
                       <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
                     </li>
@@ -60,101 +57,83 @@
     <!-- Fin Header -->
 
     <!-- Inicio Section Productos -->
-    <h1 class="ubicacion__title"data-aos="fade-up" data-aos-anchor-placement="center-bottom">Productos</h1>
+    <h1 class="section__title"data-aos="fade-up" data-aos-anchor-placement="center-bottom">Productos</h1>
     <!-- Fin del menú -->
 
     <!-- Colección de Productos -->
     <main>
-        <section class="section-producto" data-aos="fade-up" data-aos-duration="3000">
-            <!-- Inicio Catálogo -->
-            <div class="container-fluid w-100">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/carretilla.png" id="carretillaoferta" class="card-img-top" alt="Carretilla Rueda De Goma 75 L.">
-                            <div class="card-body">
-                              <h5 class="card-title">Carretilla Rueda De Goma 75 L.</h5>
-                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/amoladora.png" class="card-img-top" id="amoladoraoferta" alt="Amoladora Angular TC-AG 115/750">
-                            <div class="card-body">
-                              <h5 class="card-title">Amoladora Angular TC-AG 115/750</h5>
-                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/martilloneumatico.png" class="card-img-top" id="cinceladoraoferta" alt="Martillo Cincelador Neumatico 1/4 4500gpm">
-                            <div class="card-body">
-                              <h5 class="card-title">Martillo Cincelador Neumatico 1/4 4500gpm</h5>
-                              <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
-                            </div>
-                        </div>
-                    </div>
+        <section data-aos="fade-up" data-aos-duration="3000">
+            <div class="card-group">
+              <div class="card card-marca card-producto">
+                <img src="../multimedia/image/martilloneumatico.png" class="card-img-top" id="cinceladoraoferta" alt="Martillo Cincelador Neumatico 1/4 4500gpm">
+                <div class="card-body">
+                  <h5 class="card-title">Martillo Cincelador Neumatico 1/4 4500gpm</h5>
+                  <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/cañopvc.png" class="card-img-top" alt="Caño pvc">
-                            <div class="card-body">
-                              <h5 class="card-title">Caño Termofusion Agua 20 Mm Agua Caliente</h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/cintametrica.png" class="card-img-top" alt="Cinta Metrica Profesional 5 Mts Crossmaster">
-                            <div class="card-body">
-                              <h5 class="card-title">Cinta Metrica Profesional 5 Mts Crossmaster</h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/cableunipolar.png" class="card-img-top" alt="Cable Unipolar 1.5 Mm 100 Mts ">
-                            <div class="card-body">
-                              <h5 class="card-title">Cable Unipolar 1.5 Mm 100 Mts </h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="card card-marca card-producto">
+                <img src="../multimedia/image/carretilla.png" id="carretillaoferta" class="card-img-top" alt="Carretilla Rueda De Goma 75 L.">
+                <div class="card-body">
+                  <h5 class="card-title">Carretilla Rueda De Goma 75 L.</h5>
+                  <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/latexinterior.png" class="card-img-top" alt="Pintura látex de interior blanco mate lavable 20 L">
-                            <div class="card-body">
-                              <h5 class="card-title">Pintura látex de interior blanco mate lavable 20 L</h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/clavos.png" class="card-img-top" alt="5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total">
-                            <div class="card-body">
-                              <h5 class="card-title">5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total</h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                            <div class="card" style="width: 18rem;">
-                            <img src="../multimedia/image/destornillador.png" class="card-img-top" alt="Atornillador De Impacto 2 Bateria 20v Brusheless Industrial">
-                            <div class="card-body">
-                              <h5 class="card-title">Atornillador De Impacto 2 Bateria 20v Brusheless Industrial</h5>
-                              <p class="card-text"> Precio: $*******</p>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="card card-marca card-producto">
+                <img src="../multimedia/image/amoladora.png" class="card-img-top" id="amoladoraoferta" alt="Amoladora Angular TC-AG 115/750">
+                  <div class="card-body">
+                    <h5 class="card-title">Amoladora Angular TC-AG 115/750</h5>
+                    <p class="card-text">Precio: <strike>$*****</strike> </p><p class="card-text"> Precio Oferta: $*******</p>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card card-marca">
+                <img src="../multimedia/image/cañopvc.png" class="card-img-top" alt="Caño pvc">
+                <div class="card-body">
+                  <h5 class="card-title">Caño Termofusion Agua 20 Mm Agua Caliente</h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+              </div>
+              <div class="card card-marca">
+                <img src="../multimedia/image/cintametrica.png" class="card-img-top" alt="Cinta Metrica Profesional 5 Mts Crossmaster">
+                <div class="card-body">
+                  <h5 class="card-title">Cinta Metrica Profesional 5 Mts Crossmaster</h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+              </div>
+              <div class="card card-marca">
+                <img src="../multimedia/image/cableunipolar.png" class="card-img-top" alt="Cable Unipolar 1.5 Mm 100 Mts ">
+                <div class="card-body">
+                  <h5 class="card-title">Cable Unipolar 1.5 Mm 100 Mts </h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card card-marca" >
+                <img src="../multimedia/image/clavos.png" class="card-img-top" alt="5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total">
+                <div class="card-body">
+                  <h5 class="card-title">5000 Clavos 30mm Clavadora Neumática Einhell Lusqtoff Total</h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+              </div>
+              <div class="card card-marca">
+                <img src="../multimedia/image/latexinterior.png" class="card-img-top" alt="Pintura látex de interior blanco mate lavable 20 L">
+                <div class="card-body">
+                  <h5 class="card-title">Pintura látex de interior blanco mate lavable 20 L</h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+            </div>
+              <div class="card card-marca">
+                <img src="../multimedia/image/destornillador.png" class="card-img-top" alt="Atornillador De Impacto 2 Bateria 20v Brusheless Industrial">
+                <div class="card-body">
+                  <h5 class="card-title">Atornillador De Impacto 2 Bateria 20v Brusheless Industrial</h5>
+                  <p class="card-text"> Precio: $*******</p>
+                </div>
+            </div>
+              </div>
+              </div>
             </div>
             <!-- Fin Catálogo -->
         </section>
@@ -165,7 +144,7 @@
 
     <!-- Inicio Footer -->
     <a href="https://www.whatsapp.com/?lang=es" target="_blank"><img src="../multimedia/image/whatsapp.PNG" alt="Logo WhatsApp" class="footer__whatsapp"></a>
-    <footer style="background-color: #deded5;" id="contacto">
+    <footer style="background-color: #deded5;" id="contacto" class="footer__productos">
         <div class="container p-4">
           <div class="row">
             <div class="col-lg-6 col-md-12 mb-4">
@@ -208,22 +187,22 @@
           </div>
         </div>
         <div class="container d-flex justify-content-center py-5">
-            <a href="https://twitter.com/home?lang=es" target="_blank">
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                    <i class="fa fa-facebook"></i>
-                </button>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                    <i class="fa-brands fa-twitter"></i>
-                </button>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                    <i class="fab fa-instagram"></i>
-                </button>
-            </a>
-        </div>
+          <a href="https://twitter.com/home?lang=es" target="_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                  <img src="../multimedia/image/facebook.png" alt="Facebook Logo" class="img-fluid">
+              </button>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                  <img src="../multimedia/image/instagram.png" alt="Instagram Logo" class="img-fluid">
+              </button>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+                  <img src="../multimedia/image/tw.png" alt="Twitter" class="img-fluid">
+              </button>
+          </a>
+      </div>
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:

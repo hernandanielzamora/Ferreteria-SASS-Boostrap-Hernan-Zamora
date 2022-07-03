@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="multimedia/image/ico.ico">
     <!-- Link Animate Style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Link FontAwesome -->
-    <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>       
     <!-- Link Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link AOS -->
@@ -30,13 +27,13 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="multimedia/image/logo2.png" alt="" width="100" height="80">
+                    <img src="multimedia/image/logo2.png" alt="Logo Ferretería X" width="100" height="80">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
               </button>
-              <div class="collapse navbar-collapse div-navbar d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="nav justify-content-end">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav">
                     <li class="nav-item">
                       <a class="nav-link activeheader" aria-current="page" href="#">Inicio</a>
                     </li>
@@ -61,8 +58,8 @@
     <!-- Fin Header -->
 
     <!-- Inicio Section Productos -->
-    <h1 class="sectionp__title animate_animated animate__heartBeat"><b>Productos en Oferta</b></h1> 
-    <section class="d-flex justify-content-center">
+    <h1 class="section__title"><b>Productos en Oferta</b></h1> 
+    <section class="d-flex justify-content-center productos">
         <!-- Carrousel -->
         <div id="carouselExampleDark" class="carousel carousel-dark slide w-50 d-flex justify-content-center" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -114,35 +111,31 @@
     <!-- Fin Section Productos -->
     
     <!-- Inicio Section Marcas -->
-    <h2 class="sectionp__title" data-aos="fade-up"><b>Marcas que forman parte de Ferretería X </b></h2>
-    <section class="sectionm" data-aos="fade-up">
-             <div class="sectionm__marcas">
-                <a href="https://aerolom.com.ar/" target="_blank"><img src="multimedia/image/aerolomlogo.png" alt="Logo Aerolom" class="sectionm__image" ></a>
-            </div>
-
-            <div class="sectionm__marcas">
-                <a href="https://www.kleber.com.ar/" target="_blank"><img src="multimedia/image/kleberlogo.png" alt="Logo Kleber" class="sectionm__image"></a>
-            </div>
-
-            <div class="sectionm__marcas">
-                <a href="https://zelta.com.ar/" target="_blank"><img src="multimedia/image/zeltalogo.png" alt="Logo Zelta" class="sectionm__image"></a>
-            </div> 
+    <h2 class="section__title" data-aos="fade-up"><b>Marcas que forman parte de Ferretería X </b></h2>
+    <section data-aos="fade-up">
+              <div class="card-group">
+                <div class="card card-marca">
+                  <a href="https://aerolom.com.ar/" target="_blank"><img src="multimedia/image/aerolomlogo.png" class="card-img-top" alt="Logo Aerolom"></a>
+                </div>
+                <div class="card card-marca">
+                  <a href="https://www.kleber.com.ar/" target="_blank"><img src="multimedia/image/kleberlogo.png" class="card-img-top" alt="Logo Kleber"></a>
+                </div>
+                <div class="card card-marca">
+                  <a href="https://zelta.com.ar/" target="_blank"><img src="multimedia/image/zeltalogo.png" class="card-img-top" alt="Logo Zelta"></a>
+                </div>
+              </div>
     </section>
     <!-- Fin Section Marcas -->
 
     <!-- Inicio Section Sobre Nosotros -->
-    <h2 class="sectionnosotros__title" id="sobrenosotros" data-aos="zoom-in">Sobre Nosotros</h2>
     <section class="sectionnosotros" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+      <h2 class="sectionnosotros__title" id="sobrenosotros">Sobre Nosotros</h2>
         <div class="sectionnosotros__texto">
             <p class="sectionnosotros__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis magni repellat incidunt assumenda officia vel recusandae, quae adipisci iusto minus possimus quibusdam quod quasi eos consequatur, ipsa sed accusamus omnis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quod tenetur repellat tempore culpa quia exercitationem, accusantium aliquid sunt officia, totam natus corporis illo omnis dignissimos consequuntur assumenda ut voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus necessitatibus veniam iure accusamus eligendi? Eum in error amet nobis? Atque consectetur molestiae distinctio placeat ea ex modi architecto beatae suscipit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. A rem, expedita natus maxime culpa dolor quidem necessitatibus deserunt! Asperiores repellendus animi doloremque officia molestias laboriosam labore error adipisci aliquam ex Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi ratione voluptas fuga eos suscipit harum animi impedit id asperiores consequuntur rem, iusto architecto consequatur ab fugit consectetur dolorum illo!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ratione omnis pariatur eius enim neque fugit dolor nihil reiciendis consequatur accusamus nesciunt nulla facilis necessitatibus facere, praesentium, reprehenderit, voluptatem eos.
             Labore, quis dolor! Dolorem consectetur quisquam qui, natus quaerat in, nesciunt atque placeat iste quis laborum! Minima quibusdam, exercitationem at voluptates magni ullam quisquam maxime earum fugiat quam impedit accusamus?
             Adipisci sed natus cum, rerum inventore modi esse quibusdam obcaecati necessitatibus, libero unde est nemo vel nulla deserunt dolor numquam quo a aut! Aliquam molestiae molestias voluptatibus rerum ullam repudiandae.
             Et veniam, laboriosam quae delectus facilis architecto est minima, temporibus earum suscipit perspiciatis! Soluta optio id ratione laborum, perspiciatis accusantium! Ut, deleniti cupiditate. In optio iusto odio aperiam voluptatem blanditiis.
             Obcaecati esse ratione ullam voluptatem, rerum vel ex? Dolor facere molestiae similique! Vitae ad quod adipisci dolor error quo quibusdam animi. Enim quos nihil tempore velit vero! Eos, minus beatae!</p>    
-        </div>
-        <div class="sectionnosotros__div">
-            <img src="multimedia/image/logo.png" class="img-fluid" alt="Ferretería X">
-
         </div>
     </section>
     <!-- Fin Section Sobre Nosotros-->
@@ -195,17 +188,17 @@
     <div class="container d-flex justify-content-center py-5">
         <a href="https://twitter.com/home?lang=es" target="_blank">
             <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                <i class="fa fa-facebook"></i>
+                <img src="multimedia/image/facebook.png" alt="Facebook Logo" class="img-fluid">
             </button>
         </a>
         <a href="https://www.facebook.com/" target="_blank">
             <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                <i class="fa-brands fa-google"></i>
+                <img src="multimedia/image/instagram.png" alt="Instagram Logo" class="img-fluid">
             </button>
         </a>
         <a href="https://www.instagram.com/" target="_blank">
             <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
-                <i class="fab fa-instagram"></i>
+                <img src="multimedia/image/tw.png" alt="Twitter" class="img-fluid">
             </button>
         </a>
     </div>
