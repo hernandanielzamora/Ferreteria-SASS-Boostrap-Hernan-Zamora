@@ -11,22 +11,23 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.ubicacion__link {
-    text-decoration: none;
-    font-size: x-large;
-    color: $nav-color;
-    align-self: center;
-    margin-bottom: 2%;
-}
-
-.ubicacion__mapa{
-    align-self: center;
-    margin-bottom: 2%;
-    @media only screen and (max-width: 468px) {
-            align-self: center;
-            width: 80%;
+    a {
+        text-decoration: none;
+        font-size: x-large;
+        color: $nav-color;
+        align-self: center;
+        margin-bottom: 2%;
     }
+    iframe{
+        align-self: center;
+        margin-bottom: 2%;
+        @media only screen and (max-width: 468px) {
+                align-self: center;
+                width: 80%;
+        }
+    }
+
 }
+
+
 

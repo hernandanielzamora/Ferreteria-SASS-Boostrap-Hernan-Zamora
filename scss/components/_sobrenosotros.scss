@@ -4,35 +4,32 @@
 .sectionnosotros{
     background-image: url(../../multimedia/image/background-img.jpg);
     background-position: right;
-}
-
-.sectionnosotros__texto {
-    color: $basic-color;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-}
-
-.sectionnosotros__title {
-    color: $basic-color;
-    font-weight: bolder;
-    display: flex;
-    font-size: 60px;
-    margin-top: 10%;
-    justify-content: center;
-    @media only screen and (max-width: 468px) {
-        font-size: 30px;   
+    h2 {
+        color: $basic-color;
+        font-weight: bolder;
+        display: flex;
+        font-size: 60px;
+        margin-top: 10%;
+        justify-content: center;
+        @media only screen and (max-width: 468px) {
+            font-size: 30px;   
+        }
     }
-}
 
-.sectionnosotros__paragraph {
-    font-size: 25px;
-    @media screen and (max-width: 468px) {
-        font-size: 15px; 
+    p {
+        color: $basic-color;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        font-size: 25px;
+        @media screen and (max-width: 468px) {
+            font-size: 15px; 
+        }
     }
+    div{
+        align-self: center;
+    }
+
 }
 
-.sectionnosotros__div{
-    align-self: center;
-}
