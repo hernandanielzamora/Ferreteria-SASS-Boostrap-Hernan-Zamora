@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Página web de una ferretería\r <h1 align=\"center\">Hi 👋, I'm Hernàn Zamora</h1>\r <h3 align=\"center\">A soon to become front-end developer, looking foward to become full stack.</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hernandanielzamora/Ferreteria-Boostrap-Hernan-Zamora.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hernandanielzamora/Ferreteria-Boostrap-Hernan-Zamora/issues"
+  },
+  "homepage": "https://github.com/hernandanielzamora/Ferreteria-Boostrap-Hernan-Zamora#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

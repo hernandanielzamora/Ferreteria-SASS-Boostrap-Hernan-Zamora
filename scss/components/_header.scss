@@ -1,0 +1,15 @@
+@import "../base/variables";
+/* Header */
+.nav-link {
+    color: black;
+    font-size: large;
+    &:hover {
+        color: $nav-color;
+    }
+}
+
+.activeheader {
+    text-shadow: 1px 1px 20px $nav-color;
+    color: $nav-color;
+    font-style: oblique;
+}

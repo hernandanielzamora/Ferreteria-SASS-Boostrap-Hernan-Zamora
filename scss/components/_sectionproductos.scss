@@ -1,0 +1,21 @@
+/* Section Productos (index.html) */
+@import "../base/variables";
+
+.section__title {
+    display: flex;
+    margin: 3%;
+    margin-top: 5%;
+    font-size: 50px;
+    justify-content: center;
+    @media only screen and (max-width: 468px) {
+        font-size: 30px;
+
+    }
+
+}
+
+.product-text {
+    color: $basic-color;
+    font-size: x-large;
+    font-weight: bold;
+}

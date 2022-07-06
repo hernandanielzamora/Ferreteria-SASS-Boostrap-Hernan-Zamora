@@ -1,1 +1,30 @@
-@import "footer";
+@import "base/variables";
+
+
+/* Normalize */
+
+* {
+    font-family: 'Raleway', sans-serif !important;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(97,93,172);
+    background: linear-gradient(90deg, rgba(97,93,172,1) 0%, rgba(155,155,217,1) 26%, rgba(252,254,255,1) 100%);
+}
+
+@import "components/header";
+@import "components/sectionmarcas";
+@import "components/sectionproductos";
+@import "components/sobrenosotros";
+@import "components/ubicacion";
+@import "components/footer";
+
+
+
+
+
+
+
+
