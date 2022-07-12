@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/extends";
 /* Section Ubicación (ubicacion.html) */
 
 .body__ubicacion{
@@ -6,17 +7,9 @@
 }
 
 .ubicacion__div{
-    margin-bottom: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @extend %div;
     a {
-        text-decoration: none;
-        font-size: x-large;
-        color: $nav-color;
-        align-self: center;
-        margin-bottom: 2%;
+        @extend %text;
     }
     iframe{
         align-self: center;

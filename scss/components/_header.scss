@@ -1,15 +1,17 @@
 @import "../base/variables";
+@import "../base/mapas";
+
 /* Header */
 .nav-link {
-    color: black;
-    font-size: large;
+    color: map-get($header-structure, color-header);
+    font-size: map-get($header-structure,fonts-header);
     &:hover {
-        color: $nav-color;
+        color: map-get($header-structure, color-nav );
     }
 }
 
 .activeheader {
-    text-shadow: 1px 1px 20px $nav-color;
-    color: $nav-color;
-    font-style: oblique;
+    text-shadow: map-get($header-structure,header-text-shadow);
+    color: map-get($header-structure,color-nav);
+    font-style: map-get($header-structure,font-header-style);
 }

@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+$basic-structure: (
+    color-basic: $basic-color,
+    fontw-basic: bold,
+    display-basic: flex,
+    justifyc-basic: center,
+);
+
+$header-structure: (
+    color-header: $basic-color,
+    fonts-header: large,
+    color-nav: $nav-color,
+    header-text-shadow: 1px 1px 20px $nav-color,
+    font-header-style: oblique,
+)

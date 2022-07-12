@@ -1,0 +1,6 @@
+@mixin footer($position, $width, $bottom, $right) {
+    position: $position;
+    width: $width;
+    bottom: $bottom;
+    right: $right;
+}

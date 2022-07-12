@@ -1,26 +1,29 @@
 /* Section Sobre Nosotros */
 @import "../base/variables";
+@import "../base/mapas";
+
+/* Mapa */
 
 .sectionnosotros{
     background-image: url(../../multimedia/image/background-img.jpg);
     background-position: right;
     h2 {
-        color: $basic-color;
-        font-weight: bolder;
-        display: flex;
+        color: map-get($basic-structure,color-basic );
+        font-weight: map-get($basic-structure,fontw-basic);
+        display: map-get($basic-structure,display-basic);
         font-size: 60px;
         margin-top: 10%;
-        justify-content: center;
+        justify-content:map-get($basic-structure,justifyc-basic);
         @media only screen and (max-width: 468px) {
             font-size: 30px;   
         }
     }
 
     p {
-        color: $basic-color;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
+        color: map-get($basic-structure, color-basic);
+        font-weight: map-get($basic-structure, fontw-basic);
+        display: map-get($basic-structure,display-basic );
+        justify-content: map-get($basic-structure,justifyc-basic );
         text-align: justify;
         font-size: 25px;
         @media screen and (max-width: 468px) {

@@ -53,13 +53,14 @@ body {
 }
 
 /* Section Sobre Nosotros */
+/* Mapa */
 .sectionnosotros {
   background-image: url(../../multimedia/image/background-img.jpg);
   background-position: right;
 }
 .sectionnosotros h2 {
   color: black;
-  font-weight: bolder;
+  font-weight: bold;
   display: flex;
   font-size: 60px;
   margin-top: 10%;
@@ -87,9 +88,12 @@ body {
   align-self: center;
 }
 
-/* Section Ubicación (ubicacion.html) */
-.body__ubicacion {
-  background-color: rgb(157, 208, 221);
+.ubicacion__div a {
+  text-decoration: none;
+  font-size: x-large;
+  color: #003d73;
+  align-self: center;
+  margin-bottom: 2%;
 }
 
 .ubicacion__div {
@@ -99,13 +103,12 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.ubicacion__div a {
-  text-decoration: none;
-  font-size: x-large;
-  color: #003d73;
-  align-self: center;
-  margin-bottom: 2%;
+
+/* Section Ubicación (ubicacion.html) */
+.body__ubicacion {
+  background-color: rgb(157, 208, 221);
 }
+
 .ubicacion__div iframe {
   align-self: center;
   margin-bottom: 2%;
